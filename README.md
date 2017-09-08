@@ -21,9 +21,9 @@ As part of initiatives to better appreciate understand HTML, CSS and version con
 * Emoji
 
 
-# Authors
+# Author(s)
 Jida Asare
-link to my t
+
 # Acknowledgent
-Francis, Andrew
-Mohammed and Kofi, Cedric and all my colleagues inspiration
+A big thank you to my tutors Francis Addai and Andrew Aberkowitz both MEST teaching fellows.
+Appreciation to EIT colleagues Mohammed, Cedric.
