@@ -30,9 +30,9 @@ As part of initiatives to better appreciate understand HTML, CSS and version con
 * Emoji
 
 These are links of reference materials that served as guide to complete the project.
-*[W3schools](https://www.w3schools.com/)
-*[github.com](https://github.com)
-*[markdown cheat sheets](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#links)
+* [W3schools](https://www.w3schools.com/)
+* [github.com](https://github.com)
+* [markdown cheat sheets](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#links)
 
 
 
