@@ -6,11 +6,11 @@ This Portfolio Website is in fulfillment of HTML, CSS project requirement at Mel
 ## Content
 The content of the website includes notes about myself. It is divided into 3 sections. These include:
 
-  PHASE 1         |     CONTENTS          
+  PHASE          |     CONTENTS          
  -----------------|-----------------
-  1.  | My Profile            
-  1. |My skillset           
-  1. | My Motivation         
+  One  | My Profile            
+  Two |My skillset           
+  Three | My Motivation         
                                         
 
 * My profile
