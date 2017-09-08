@@ -8,9 +8,9 @@ The content of the website includes notes about myself. It is divided into 3 sec
 
   PHASE 1         |     CONTENTS          
  -----------------|-----------------
-        1  | My Profile            
-        2  |My skillset           
-        3  | My Motivation         
+ *1  | My Profile            
+ *1  |My skillset           
+ *1  | My Motivation         
                                         
 
 * My profile
