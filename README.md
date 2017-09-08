@@ -12,7 +12,15 @@ The content of the website includes notes about myself. It is divided into 3 sec
  * My motivation to be an entrepreneur
  
 # Structure
-As part of initiatives to better appreciate understand HTML, CSS and version control, the scope of this work is to design a simple static website with an image, HTML tags for links and apply basic CSS styles to the HTML. To better appreciate version control, the website must be pushed to a remote repository on github with a README.md file written in markdown language. 
+As part of initiatives to better appreciate understand HTML, CSS and version control, the scope of this work is to design a simple static website with an image, HTML tags for links and apply basic CSS styles to the HTML. To better appreciate version control, the website must be pushed to a remote repository on github with a README.md file written in markdown language. The README.md must contain an application of the following:
+* Header
+* Text
+* List
+* Table
+* Picture
+* Emoji
+
+
 # Authors
 Jida Asare
 link to my t
