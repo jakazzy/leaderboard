@@ -1,4 +1,4 @@
-![Jida Asare](assets/images/jida1.jpg = 250x250)
+![Jida Asare](assets/images/jida1.jpg |width=200)
 
 
 # Portfolio Website
