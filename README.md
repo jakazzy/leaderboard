@@ -1,4 +1,5 @@
-![Jida Asare](assets/images/jida1.jpg)
+![Jida Asare](assets/images/jida1.jpg | width=200)
+
 
 # Portfolio Website
 This Portfolio Website is in fulfillment of HTML, CSS project requirement at Meltwater Entrepreneurial School of Technology(MEST) as an Enterpreneur In Training(EIT). It is an exercise aimed at giving participants(of which i am part) hands on experience on HTML, CSS as well as version control(github to be precise).
