@@ -1,4 +1,4 @@
-![Jida Asare](assets/images/jida1.jpg |width=200)
+![Jida Asare](assets/images/jida1.jpg | width=200)
 
 
 # Portfolio Website
