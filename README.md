@@ -1,1 +1,1 @@
-This is a simple board in Nodejs.
+This is a simple board in Nodejs
