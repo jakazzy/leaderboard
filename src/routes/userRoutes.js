@@ -1,7 +1,8 @@
 import multer from 'multer'
+import { filter } from '../validate/validate'
 import v1 from '../controllers'
 
-const upload = multer({ dest: 'data/' })
+const upload = multer({ dest: 'data/', fileFilter: filter })
 export default (express) => {
     const router = express.Router()
 
