@@ -1,18 +1,20 @@
 import express from 'express'
 import morgan from 'morgan'
+import cors from 'cors'
 import routes from './routes'
 // import parse from 'csv-parse'
 // import fs from 'fs'
 
 const app = express()
-const PORT = process.env.PORT || 3000
+const PORT = process.env.PORT || 8080
 // const csvData = []
 
 // middleware
 if (process.env.NODE_ENV === 'development') {
     app.use = morgan('dev')
 }
-app.use('/api/v1/users', routes.userRoutes(express))
+app.use(cors())
+app.use('/api/v1', routes.userRoutes(express))
 // fs.createReadStream(__dirname + '/data/test.csv')
 //     .pipe(parse({ delimiter: ',', columns: true }))
 //     .on('data', (data) => {
