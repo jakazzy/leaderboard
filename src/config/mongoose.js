@@ -3,7 +3,7 @@ import config from './config'
 const con = config.dev
 
 export default (mongoose) => {
-    mongoose
+    return mongoose
         .connect(con.mongooseUri)
         .then(() => console.log('Connection with mongoDB successful'))
         .catch((err) => {
