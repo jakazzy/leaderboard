@@ -2,10 +2,15 @@ import express from 'express'
 import morgan from 'morgan'
 import cors from 'cors'
 import bodyParser from 'body-parser'
+import mongoose from 'mongoose'
 import routes from './routes'
+import db from './config/mongoose'
 
 const app = express()
 const PORT = process.env.PORT || 8080
+
+// database connection
+db(mongoose)
 
 // middleware
 if (process.env.NODE_ENV === 'development') {
