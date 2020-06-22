@@ -18,6 +18,9 @@ if (process.env.NODE_ENV === 'development') {
 //     })
 //     .on('end', () => console.log(csvData))
 
+app.get('/', (req, res) => {
+    res.send('welcome to the parser')
+})
 app.listen(PORT, () => {
     console.log(`server running on port ${PORT}`)
     console.log(`CTRL + C to end the server`)
