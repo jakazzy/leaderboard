@@ -1,5 +1,6 @@
 import express from 'express'
 import morgan from 'morgan'
+import routes from './routes'
 // import parse from 'csv-parse'
 // import fs from 'fs'
 
@@ -11,6 +12,7 @@ const PORT = process.env.PORT || 3000
 if (process.env.NODE_ENV === 'development') {
     app.use = morgan('dev')
 }
+app.use('/api/v1/users', routes.userRoutes(express))
 // fs.createReadStream(__dirname + '/data/test.csv')
 //     .pipe(parse({ delimiter: ',', columns: true }))
 //     .on('data', (data) => {
