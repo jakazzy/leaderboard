@@ -5,16 +5,12 @@ import bodyParser from 'body-parser'
 import mongoose from 'mongoose'
 import routes from './routes'
 import db from './config/mongoose'
-import user from './models/user'
 
 const app = express()
 const PORT = process.env.PORT || 8080
 
 // database connection
 db(mongoose)
-user(mongoose)
-
-console.log('this is db')
 
 app.use(cors())
 app.use('/api/v1', routes.userRoutes(express))
