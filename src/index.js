@@ -3,6 +3,7 @@ import morgan from 'morgan'
 import cors from 'cors'
 import bodyParser from 'body-parser'
 import mongoose from 'mongoose'
+import 'regenerator-runtime/runtime'
 import routes from './routes'
 import db from './config/mongoose'
 
