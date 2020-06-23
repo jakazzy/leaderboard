@@ -12,6 +12,7 @@ export default (express) => {
         .post(v1.userController.createUser)
 
     router.post('/upload', upload.single('file'), v1.userController.uploadcsv)
+    router.post('/callback', v1.userController.login)
 
     //  upload csv file
     return router
