@@ -8,7 +8,7 @@ export default (express) => {
 
     router
         .route('/')
-        .get(v1.userController.getAllUsers)
+        .get(v1.userController.index)
         .post(v1.userController.createUser)
 
     router.post('/upload', upload.single('file'), v1.userController.uploadcsv)

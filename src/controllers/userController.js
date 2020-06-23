@@ -1,10 +1,60 @@
+/* eslint-disable no-console */
 import parse from 'csv-parse'
 import fs from 'fs'
 import User from '../models/user'
 
 export default {
-    getAllUsers: async (req, res) => {
-        res.send('get all users')
+    index: async (req, res) => {
+        try {
+            const page = parseInt(req.query.page, 10) || 1
+            const limit = parseInt(req.query.limit, 10) || 10
+
+            const myCustomLabels = {
+                totalDocs: 'itemCount',
+                docs: 'itemsList',
+                limit: 'perPage',
+                page: 'currentPage',
+                nextPage: 'next',
+                prevPage: 'prev',
+                totalPages: 'pageCount',
+                pagingCounter: 'slNo',
+                meta: 'paginator'
+            }
+
+            const options = {
+                page,
+                limit,
+                sort: { score: -1 },
+                collation: {
+                    locale: 'en'
+                },
+                customLabels: myCustomLabels
+            }
+
+            User.paginate({}, options)
+                .then(function (result) {
+                    // result.itemsList [here docs become itemsList]
+                    // result.paginator.itemCount =
+                    // 100 [here totalDocs becomes itemCount]
+                    // result.paginator.perPage = 10 [here limit becomes perPage]
+                    // result.paginator.currentPage =
+                    //  1 [here page becomes currentPage]
+                    // result.paginator.pageCount =
+                    // 10 [here totalPages becomes pageCount]
+                    // result.paginator.next = 2 [here nextPage becomes next]
+                    // result.paginator.prev = null [here prevPage becomes prev]
+                    // result.paginator.slNo = 1 [here pagingCounter becomes slNo]
+                    // result.paginator.hasNextPage = true
+                    // result.paginator.hasPrevPage = false
+                    res.status(200).send('get all users')
+                })
+                .catch((error) => {
+                    console.error(error)
+                    res.status(400).send(error.message)
+                })
+        } catch (error) {
+            res.status(400).send(error.message)
+        }
     },
 
     createUser: async (req, res) => {
