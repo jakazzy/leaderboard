@@ -80,5 +80,8 @@ export default {
         } catch (error) {
             res.status(400).send(error.message)
         }
+    },
+    login: async (req, res) => {
+        res.send('login successful')
     }
 }
