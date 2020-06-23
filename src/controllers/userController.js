@@ -46,7 +46,6 @@ export default {
                     // result.paginator.slNo = 1 [here pagingCounter becomes slNo]
                     // result.paginator.hasNextPage = true
                     // result.paginator.hasPrevPage = false
-                    console.log(result, 'this is result')
                     res.status(200).send('get all users')
                 })
                 .catch((error) => {
