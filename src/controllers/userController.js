@@ -1,5 +1,6 @@
 import parse from 'csv-parse'
 import fs from 'fs'
+import User from '../models/user'
 
 export default {
     getAllUsers: async (req, res) => {
@@ -20,7 +21,10 @@ export default {
                     .on('data', (data) => {
                         csvData.push(data)
                     })
-                    .on('end', () => console.log(csvData))
+                    .on('end', async () => {
+                        await User.insertMany(csvData)
+                        console.log('csv data inserted')
+                    })
             )
             res.status(200).send('parsing of csv file successful')
         } catch (error) {
